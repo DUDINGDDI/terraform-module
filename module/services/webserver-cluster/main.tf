@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "ap-northeast-2"
-}
-
 resource "aws_security_group" "alb" {
   name = "terraform-examaple-alb"
   
