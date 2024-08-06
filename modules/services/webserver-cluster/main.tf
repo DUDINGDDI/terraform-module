@@ -1,6 +1,6 @@
 resource "aws_security_group" "alb" {
   name = "terraform-examaple-alb"
-  
+  name = "${var.cluster_name}-alb" 
   ingress {
     from_port = 80
     to_port = 80
